@@ -13,8 +13,56 @@ Browserslist: caniuse-lite is outdated. Please run:
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
 PASS src/arrays.test.ts
 PASS src/objects.test.ts
+PASS src/nested.test.ts
+  ● Console
+
+    console.log
+      {
+        id: 1,
+        name: 'Question 1',
+        body: '',
+        type: 'multiple_choice_question',
+        options: [],
+        expected: '',
+        points: 1,
+        published: false
+      }
+
+      at flatMap (src/nested.ts:247:21)
+          at Array.flatMap (<anonymous>)
+
+    console.log
+      {
+        id: 47,
+        name: 'My New Question',
+        body: '',
+        type: 'multiple_choice_question',
+        options: [],
+        expected: '',
+        points: 1,
+        published: false
+      }
+
+      at flatMap (src/nested.ts:247:21)
+          at Array.flatMap (<anonymous>)
+
+    console.log
+      {
+        id: 3,
+        name: 'Goats',
+        body: 'How many goats are there usually on the Green?',
+        type: 'multiple_choice_question',
+        options: [ 'Zero, why would there be goats on the green?', '18420', 'Two' ],
+        expected: 'Two',
+        points: 10,
+        published: false
+      }
+
+      at flatMap (src/nested.ts:247:21)
+          at Array.flatMap (<anonymous>)
+
 PASS src/functions.test.ts
-PASS src/HtmlCss.test.tsx
+PASS src/text.test.tsx
   ● Console
 
     console.error
@@ -32,7 +80,7 @@ PASS src/HtmlCss.test.tsx
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
       at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:22707:5)
 
-PASS src/text.test.tsx
+PASS src/HtmlCss.test.tsx
   ● Console
 
     console.error
@@ -71,18 +119,20 @@ PASS src/App.test.tsx
 ----------------|---------|----------|---------|---------|-------------------
 File            | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------------|---------|----------|---------|---------|-------------------
-All files       |   96.15 |    85.71 |     100 |   96.07 |                   
- src            |   96.15 |    85.71 |     100 |   96.07 |                   
+All files       |    97.5 |     88.6 |     100 |   97.33 |                   
+ src            |    97.5 |     88.6 |     100 |   97.33 |                   
   App.tsx       |     100 |      100 |     100 |     100 |                   
   arrays.ts     |     100 |      100 |     100 |     100 |                   
   functions.ts  |     100 |      100 |     100 |     100 |                   
+  nested.ts     |     100 |    95.65 |     100 |     100 | 211               
   objects.ts    |   88.57 |    69.23 |     100 |   88.57 | 61-67,82          
  src/interfaces |       0 |        0 |       0 |       0 |                   
+  answer.ts     |       0 |        0 |       0 |       0 |                   
   question.ts   |       0 |        0 |       0 |       0 |                   
 ----------------|---------|----------|---------|---------|-------------------
 
-Test Suites: 6 passed, 6 total
-Tests:       33 passed, 33 total
+Test Suites: 7 passed, 7 total
+Tests:       49 passed, 49 total
 Snapshots:   0 total
-Time:        3.682 s
+Time:        4.063 s
 Ran all test suites.
