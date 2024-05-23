@@ -61,21 +61,50 @@ PASS src/nested.test.ts
       at flatMap (src/nested.ts:247:21)
           at Array.flatMap (<anonymous>)
 
+PASS src/components/StartAttempt.test.tsx
+PASS src/bad-components/ChooseTeam.test.tsx
+PASS src/components/TwoDice.test.tsx
+PASS src/bad-components/DoubleHalf.test.tsx
+PASS src/functions.test.ts
+PASS src/components/ChangeType.test.tsx
+PASS src/components/CycleHoliday.test.tsx
+PASS src/components/Counter.test.tsx
+PASS src/components/RevealAnswer.test.tsx
+PASS src/bad-components/ColoredBox.test.tsx
+PASS src/bad-components/ShoveBox.test.tsx
 FAIL src/HtmlCss.test.tsx
   ● Some HTML Elements are added. › There is a header
 
-    TestingLibraryElementError: Unable to find an accessible element with the role "heading"
+    TestingLibraryElementError: Found multiple elements with the role "heading"
 
-    Here are the accessible roles:
+    Here are the matching elements:
 
-      banner:
+    Ignored nodes: comments, <script />, <style />
+    [36m<h1>[39m
+      [0mQuiz Application[0m
+    [36m</h1>[39m
 
-      Name "":
-      [36m<header[39m
-        [33mclass[39m=[32m"App-header"[39m
-      [36m/>[39m
+    Ignored nodes: comments, <script />, <style />
+    [36m<h1>[39m
+      [0mQuiz Attempt Manager[0m
+    [36m</h1>[39m
 
-      --------------------------------------------------
+    Ignored nodes: comments, <script />, <style />
+    [36m<h1>[39m
+      [0mTwo Dice Game[0m
+    [36m</h1>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<h1>[39m
+      [0mQuiz Question Editor[0m
+    [36m</h1>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<h1>[39m
+      [0mCycle Holidays[0m
+    [36m</h1>[39m
+
+    (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
 
     Ignored nodes: comments, <script />, <style />
     [36m<body>[39m
@@ -88,13 +117,140 @@ FAIL src/HtmlCss.test.tsx
           [36m>[39m
             [0mUD CISC275 with React Hooks and TypeScript Thern Diallo[0m
           [36m</header>[39m
-          [36m<p>[39m
-            [0mEdit [0m
-            [36m<code>[39m
-              [0msrc/App.tsx[0m
-            [36m</code>[39m
-            [0m and save. This page will automatically reload.[0m
-          [36m</p>[39m
+          [36m<hr />[39m
+          [36m<span>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mAdd One[0m
+            [36m</button>[39m
+            [0mto [0m
+            [0m0[0m
+            [0m.[0m
+          [36m</span>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mQuiz Application[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mThe answer is:[0m
+            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mReveal Answer[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mQuiz Attempt Manager[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mAttempts Left: [0m
+              [0m4[0m
+            [36m</p>[39m
+            [36m<p>[39m
+              [0mQuiz Not In Progress[0m
+            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mStart Quiz[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mdisabled[39m=[32m""[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mStop Quiz[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mMulligan[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mTwo Dice Game[0m
+            [36m</h1>[39m
+            [36m<div>[39m
+              [36m<span[39m
+                [33mdata-testid[39m=[32m"left-die"[39m
+              [36m>[39m
+                [0m7[0m
+              [36m</span>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"roll-left"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mRoll Left[0m
+              [36m</button>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span[39m
+                [33mdata-testid[39m=[32m"right-die"[39m
+              [36m>[39m
+                [0m8[0m
+              [36m</span>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"roll-right"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mRoll Right[0m
+              [36m</button>[39m
+            [36m</div>[39m
+            [0m[0m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mQuiz Question Editor[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mThe type is:[0m
+            [36m</p>[39m
+            [36m<p>[39m
+              [0mShort Answer[0m
+            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mChange Type[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mCycle Holidays[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mHoliday: [0m
+              [0m🎏[0m
+            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mAdvance by Alphabet[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mAdvance by Year[0m
+            [36m</button>[39m
+          [36m</div>[39m
         [36m</div>[39m
       [36m</div>[39m
     [36m</body>[39m
@@ -108,8 +264,9 @@ FAIL src/HtmlCss.test.tsx
       12 |
 
       at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
-      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
-      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getElementError (node_modules/@testing-library/dom/dist/query-helpers.js:25:35)
+      at getMultipleElementsFoundError (node_modules/@testing-library/dom/dist/query-helpers.js:29:10)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:66:13
       at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
       at Object.<anonymous> (src/HtmlCss.test.tsx:9:31)
 
@@ -127,6 +284,111 @@ FAIL src/HtmlCss.test.tsx
       [36m/>[39m
 
       --------------------------------------------------
+      separator:
+
+      Name "":
+      [36m<hr />[39m
+
+      Name "":
+      [36m<hr />[39m
+
+      Name "":
+      [36m<hr />[39m
+
+      Name "":
+      [36m<hr />[39m
+
+      Name "":
+      [36m<hr />[39m
+
+      Name "":
+      [36m<hr />[39m
+
+      --------------------------------------------------
+      button:
+
+      Name "Add One":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Reveal Answer":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Start Quiz":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Stop Quiz":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mdisabled[39m=[32m""[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Mulligan":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Roll Left":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mdata-testid[39m=[32m"roll-left"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Roll Right":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mdata-testid[39m=[32m"roll-right"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Change Type":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Advance by Alphabet":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Advance by Year":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+      heading:
+
+      Name "Quiz Application":
+      [36m<h1 />[39m
+
+      Name "Quiz Attempt Manager":
+      [36m<h1 />[39m
+
+      Name "Two Dice Game":
+      [36m<h1 />[39m
+
+      Name "Quiz Question Editor":
+      [36m<h1 />[39m
+
+      Name "Cycle Holidays":
+      [36m<h1 />[39m
+
+      --------------------------------------------------
 
     Ignored nodes: comments, <script />, <style />
     [36m<body>[39m
@@ -139,13 +401,140 @@ FAIL src/HtmlCss.test.tsx
           [36m>[39m
             [0mUD CISC275 with React Hooks and TypeScript Thern Diallo[0m
           [36m</header>[39m
-          [36m<p>[39m
-            [0mEdit [0m
-            [36m<code>[39m
-              [0msrc/App.tsx[0m
-            [36m</code>[39m
-            [0m and save. This page will automatically reload.[0m
-          [36m</p>[39m
+          [36m<hr />[39m
+          [36m<span>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mAdd One[0m
+            [36m</button>[39m
+            [0mto [0m
+            [0m0[0m
+            [0m.[0m
+          [36m</span>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mQuiz Application[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mThe answer is:[0m
+            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mReveal Answer[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mQuiz Attempt Manager[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mAttempts Left: [0m
+              [0m4[0m
+            [36m</p>[39m
+            [36m<p>[39m
+              [0mQuiz Not In Progress[0m
+            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mStart Quiz[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mdisabled[39m=[32m""[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mStop Quiz[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mMulligan[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mTwo Dice Game[0m
+            [36m</h1>[39m
+            [36m<div>[39m
+              [36m<span[39m
+                [33mdata-testid[39m=[32m"left-die"[39m
+              [36m>[39m
+                [0m7[0m
+              [36m</span>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"roll-left"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mRoll Left[0m
+              [36m</button>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span[39m
+                [33mdata-testid[39m=[32m"right-die"[39m
+              [36m>[39m
+                [0m8[0m
+              [36m</span>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"roll-right"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mRoll Right[0m
+              [36m</button>[39m
+            [36m</div>[39m
+            [0m[0m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mQuiz Question Editor[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mThe type is:[0m
+            [36m</p>[39m
+            [36m<p>[39m
+              [0mShort Answer[0m
+            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mChange Type[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mCycle Holidays[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mHoliday: [0m
+              [0m🎏[0m
+            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mAdvance by Alphabet[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mAdvance by Year[0m
+            [36m</button>[39m
+          [36m</div>[39m
         [36m</div>[39m
       [36m</div>[39m
     [36m</body>[39m
@@ -178,6 +567,111 @@ FAIL src/HtmlCss.test.tsx
       [36m/>[39m
 
       --------------------------------------------------
+      separator:
+
+      Name "":
+      [36m<hr />[39m
+
+      Name "":
+      [36m<hr />[39m
+
+      Name "":
+      [36m<hr />[39m
+
+      Name "":
+      [36m<hr />[39m
+
+      Name "":
+      [36m<hr />[39m
+
+      Name "":
+      [36m<hr />[39m
+
+      --------------------------------------------------
+      button:
+
+      Name "Add One":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Reveal Answer":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Start Quiz":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Stop Quiz":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mdisabled[39m=[32m""[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Mulligan":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Roll Left":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mdata-testid[39m=[32m"roll-left"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Roll Right":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mdata-testid[39m=[32m"roll-right"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Change Type":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Advance by Alphabet":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Advance by Year":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+      heading:
+
+      Name "Quiz Application":
+      [36m<h1 />[39m
+
+      Name "Quiz Attempt Manager":
+      [36m<h1 />[39m
+
+      Name "Two Dice Game":
+      [36m<h1 />[39m
+
+      Name "Quiz Question Editor":
+      [36m<h1 />[39m
+
+      Name "Cycle Holidays":
+      [36m<h1 />[39m
+
+      --------------------------------------------------
 
     Ignored nodes: comments, <script />, <style />
     [36m<body>[39m
@@ -190,13 +684,140 @@ FAIL src/HtmlCss.test.tsx
           [36m>[39m
             [0mUD CISC275 with React Hooks and TypeScript Thern Diallo[0m
           [36m</header>[39m
-          [36m<p>[39m
-            [0mEdit [0m
-            [36m<code>[39m
-              [0msrc/App.tsx[0m
-            [36m</code>[39m
-            [0m and save. This page will automatically reload.[0m
-          [36m</p>[39m
+          [36m<hr />[39m
+          [36m<span>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mAdd One[0m
+            [36m</button>[39m
+            [0mto [0m
+            [0m0[0m
+            [0m.[0m
+          [36m</span>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mQuiz Application[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mThe answer is:[0m
+            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mReveal Answer[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mQuiz Attempt Manager[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mAttempts Left: [0m
+              [0m4[0m
+            [36m</p>[39m
+            [36m<p>[39m
+              [0mQuiz Not In Progress[0m
+            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mStart Quiz[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mdisabled[39m=[32m""[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mStop Quiz[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mMulligan[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mTwo Dice Game[0m
+            [36m</h1>[39m
+            [36m<div>[39m
+              [36m<span[39m
+                [33mdata-testid[39m=[32m"left-die"[39m
+              [36m>[39m
+                [0m7[0m
+              [36m</span>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"roll-left"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mRoll Left[0m
+              [36m</button>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span[39m
+                [33mdata-testid[39m=[32m"right-die"[39m
+              [36m>[39m
+                [0m8[0m
+              [36m</span>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"roll-right"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mRoll Right[0m
+              [36m</button>[39m
+            [36m</div>[39m
+            [0m[0m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mQuiz Question Editor[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mThe type is:[0m
+            [36m</p>[39m
+            [36m<p>[39m
+              [0mShort Answer[0m
+            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mChange Type[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mCycle Holidays[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mHoliday: [0m
+              [0m🎏[0m
+            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mAdvance by Alphabet[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mAdvance by Year[0m
+            [36m</button>[39m
+          [36m</div>[39m
         [36m</div>[39m
       [36m</div>[39m
     [36m</body>[39m
@@ -229,6 +850,111 @@ FAIL src/HtmlCss.test.tsx
       [36m/>[39m
 
       --------------------------------------------------
+      separator:
+
+      Name "":
+      [36m<hr />[39m
+
+      Name "":
+      [36m<hr />[39m
+
+      Name "":
+      [36m<hr />[39m
+
+      Name "":
+      [36m<hr />[39m
+
+      Name "":
+      [36m<hr />[39m
+
+      Name "":
+      [36m<hr />[39m
+
+      --------------------------------------------------
+      button:
+
+      Name "Add One":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Reveal Answer":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Start Quiz":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Stop Quiz":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mdisabled[39m=[32m""[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Mulligan":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Roll Left":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mdata-testid[39m=[32m"roll-left"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Roll Right":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mdata-testid[39m=[32m"roll-right"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Change Type":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Advance by Alphabet":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Advance by Year":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+      heading:
+
+      Name "Quiz Application":
+      [36m<h1 />[39m
+
+      Name "Quiz Attempt Manager":
+      [36m<h1 />[39m
+
+      Name "Two Dice Game":
+      [36m<h1 />[39m
+
+      Name "Quiz Question Editor":
+      [36m<h1 />[39m
+
+      Name "Cycle Holidays":
+      [36m<h1 />[39m
+
+      --------------------------------------------------
 
     Ignored nodes: comments, <script />, <style />
     [36m<body>[39m
@@ -241,13 +967,140 @@ FAIL src/HtmlCss.test.tsx
           [36m>[39m
             [0mUD CISC275 with React Hooks and TypeScript Thern Diallo[0m
           [36m</header>[39m
-          [36m<p>[39m
-            [0mEdit [0m
-            [36m<code>[39m
-              [0msrc/App.tsx[0m
-            [36m</code>[39m
-            [0m and save. This page will automatically reload.[0m
-          [36m</p>[39m
+          [36m<hr />[39m
+          [36m<span>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mAdd One[0m
+            [36m</button>[39m
+            [0mto [0m
+            [0m0[0m
+            [0m.[0m
+          [36m</span>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mQuiz Application[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mThe answer is:[0m
+            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mReveal Answer[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mQuiz Attempt Manager[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mAttempts Left: [0m
+              [0m4[0m
+            [36m</p>[39m
+            [36m<p>[39m
+              [0mQuiz Not In Progress[0m
+            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mStart Quiz[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mdisabled[39m=[32m""[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mStop Quiz[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mMulligan[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mTwo Dice Game[0m
+            [36m</h1>[39m
+            [36m<div>[39m
+              [36m<span[39m
+                [33mdata-testid[39m=[32m"left-die"[39m
+              [36m>[39m
+                [0m7[0m
+              [36m</span>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"roll-left"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mRoll Left[0m
+              [36m</button>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span[39m
+                [33mdata-testid[39m=[32m"right-die"[39m
+              [36m>[39m
+                [0m8[0m
+              [36m</span>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"roll-right"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mRoll Right[0m
+              [36m</button>[39m
+            [36m</div>[39m
+            [0m[0m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mQuiz Question Editor[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mThe type is:[0m
+            [36m</p>[39m
+            [36m<p>[39m
+              [0mShort Answer[0m
+            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mChange Type[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mCycle Holidays[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mHoliday: [0m
+              [0m🎏[0m
+            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mAdvance by Alphabet[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mAdvance by Year[0m
+            [36m</button>[39m
+          [36m</div>[39m
         [36m</div>[39m
       [36m</div>[39m
     [36m</body>[39m
@@ -280,6 +1133,111 @@ FAIL src/HtmlCss.test.tsx
       [36m/>[39m
 
       --------------------------------------------------
+      separator:
+
+      Name "":
+      [36m<hr />[39m
+
+      Name "":
+      [36m<hr />[39m
+
+      Name "":
+      [36m<hr />[39m
+
+      Name "":
+      [36m<hr />[39m
+
+      Name "":
+      [36m<hr />[39m
+
+      Name "":
+      [36m<hr />[39m
+
+      --------------------------------------------------
+      button:
+
+      Name "Add One":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Reveal Answer":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Start Quiz":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Stop Quiz":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mdisabled[39m=[32m""[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Mulligan":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Roll Left":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mdata-testid[39m=[32m"roll-left"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Roll Right":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mdata-testid[39m=[32m"roll-right"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Change Type":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Advance by Alphabet":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      Name "Advance by Year":
+      [36m<button[39m
+        [33mclass[39m=[32m"btn btn-primary"[39m
+        [33mtype[39m=[32m"button"[39m
+      [36m/>[39m
+
+      --------------------------------------------------
+      heading:
+
+      Name "Quiz Application":
+      [36m<h1 />[39m
+
+      Name "Quiz Attempt Manager":
+      [36m<h1 />[39m
+
+      Name "Two Dice Game":
+      [36m<h1 />[39m
+
+      Name "Quiz Question Editor":
+      [36m<h1 />[39m
+
+      Name "Cycle Holidays":
+      [36m<h1 />[39m
+
+      --------------------------------------------------
 
     Ignored nodes: comments, <script />, <style />
     [36m<body>[39m
@@ -292,13 +1250,140 @@ FAIL src/HtmlCss.test.tsx
           [36m>[39m
             [0mUD CISC275 with React Hooks and TypeScript Thern Diallo[0m
           [36m</header>[39m
-          [36m<p>[39m
-            [0mEdit [0m
-            [36m<code>[39m
-              [0msrc/App.tsx[0m
-            [36m</code>[39m
-            [0m and save. This page will automatically reload.[0m
-          [36m</p>[39m
+          [36m<hr />[39m
+          [36m<span>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mAdd One[0m
+            [36m</button>[39m
+            [0mto [0m
+            [0m0[0m
+            [0m.[0m
+          [36m</span>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mQuiz Application[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mThe answer is:[0m
+            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mReveal Answer[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mQuiz Attempt Manager[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mAttempts Left: [0m
+              [0m4[0m
+            [36m</p>[39m
+            [36m<p>[39m
+              [0mQuiz Not In Progress[0m
+            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mStart Quiz[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mdisabled[39m=[32m""[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mStop Quiz[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mMulligan[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mTwo Dice Game[0m
+            [36m</h1>[39m
+            [36m<div>[39m
+              [36m<span[39m
+                [33mdata-testid[39m=[32m"left-die"[39m
+              [36m>[39m
+                [0m7[0m
+              [36m</span>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"roll-left"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mRoll Left[0m
+              [36m</button>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span[39m
+                [33mdata-testid[39m=[32m"right-die"[39m
+              [36m>[39m
+                [0m8[0m
+              [36m</span>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"roll-right"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mRoll Right[0m
+              [36m</button>[39m
+            [36m</div>[39m
+            [0m[0m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mQuiz Question Editor[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mThe type is:[0m
+            [36m</p>[39m
+            [36m<p>[39m
+              [0mShort Answer[0m
+            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mChange Type[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mCycle Holidays[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mHoliday: [0m
+              [0m🎏[0m
+            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mAdvance by Alphabet[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mAdvance by Year[0m
+            [36m</button>[39m
+          [36m</div>[39m
         [36m</div>[39m
       [36m</div>[39m
     [36m</body>[39m
@@ -317,14 +1402,6 @@ FAIL src/HtmlCss.test.tsx
       at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
       at Object.<anonymous> (src/HtmlCss.test.tsx:56:31)
 
-PASS src/components/StartAttempt.test.tsx
-PASS src/functions.test.ts
-PASS src/components/TwoDice.test.tsx
-PASS src/components/ChangeType.test.tsx
-PASS src/components/Counter.test.tsx
-PASS src/components/CycleHoliday.test.tsx
-PASS src/App.test.tsx
-PASS src/components/RevealAnswer.test.tsx
 FAIL src/text.test.tsx
   ● renders the text 'Hello World' somewhere
 
@@ -341,13 +1418,140 @@ FAIL src/text.test.tsx
           [36m>[39m
             [0mUD CISC275 with React Hooks and TypeScript Thern Diallo[0m
           [36m</header>[39m
-          [36m<p>[39m
-            [0mEdit [0m
-            [36m<code>[39m
-              [0msrc/App.tsx[0m
-            [36m</code>[39m
-            [0m and save. This page will automatically reload.[0m
-          [36m</p>[39m
+          [36m<hr />[39m
+          [36m<span>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mAdd One[0m
+            [36m</button>[39m
+            [0mto [0m
+            [0m0[0m
+            [0m.[0m
+          [36m</span>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mQuiz Application[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mThe answer is:[0m
+            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mReveal Answer[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mQuiz Attempt Manager[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mAttempts Left: [0m
+              [0m4[0m
+            [36m</p>[39m
+            [36m<p>[39m
+              [0mQuiz Not In Progress[0m
+            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mStart Quiz[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mdisabled[39m=[32m""[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mStop Quiz[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mMulligan[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mTwo Dice Game[0m
+            [36m</h1>[39m
+            [36m<div>[39m
+              [36m<span[39m
+                [33mdata-testid[39m=[32m"left-die"[39m
+              [36m>[39m
+                [0m7[0m
+              [36m</span>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"roll-left"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mRoll Left[0m
+              [36m</button>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span[39m
+                [33mdata-testid[39m=[32m"right-die"[39m
+              [36m>[39m
+                [0m8[0m
+              [36m</span>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"roll-right"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mRoll Right[0m
+              [36m</button>[39m
+            [36m</div>[39m
+            [0m[0m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mQuiz Question Editor[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mThe type is:[0m
+            [36m</p>[39m
+            [36m<p>[39m
+              [0mShort Answer[0m
+            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mChange Type[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<hr />[39m
+          [36m<div>[39m
+            [36m<h1>[39m
+              [0mCycle Holidays[0m
+            [36m</h1>[39m
+            [36m<p>[39m
+              [0mHoliday: [0m
+              [0m🎏[0m
+            [36m</p>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mAdvance by Alphabet[0m
+            [36m</button>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mAdvance by Year[0m
+            [36m</button>[39m
+          [36m</div>[39m
         [36m</div>[39m
       [36m</div>[39m
     [36m</body>[39m
@@ -365,29 +1569,37 @@ FAIL src/text.test.tsx
       at getAllByText (node_modules/@testing-library/dom/dist/query-helpers.js:130:15)
       at Object.<anonymous> (src/text.test.tsx:7:26)
 
--------------------|---------|----------|---------|---------|-------------------
-File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
--------------------|---------|----------|---------|---------|-------------------
-All files          |    97.7 |    89.52 |     100 |   97.59 |                   
- src               |   97.48 |     88.6 |     100 |   97.31 |                   
-  App.tsx          |     100 |      100 |     100 |     100 |                   
-  arrays.ts        |     100 |      100 |     100 |     100 |                   
-  functions.ts     |     100 |      100 |     100 |     100 |                   
-  nested.ts        |     100 |    95.65 |     100 |     100 | 211               
-  objects.ts       |   88.57 |    69.23 |     100 |   88.57 | 61-67,82          
- src/components    |    98.3 |     92.3 |     100 |    98.3 |                   
-  ChangeType.tsx   |     100 |      100 |     100 |     100 |                   
-  Counter.tsx      |     100 |      100 |     100 |     100 |                   
-  CycleHoliday.tsx |   94.44 |    83.33 |     100 |   94.44 | 68                
-  RevealAnswer.tsx |     100 |      100 |     100 |     100 |                   
-  StartAttempt.tsx |     100 |    83.33 |     100 |     100 | 9                 
-  TwoDice.tsx      |     100 |      100 |     100 |     100 |                   
- src/interfaces    |       0 |        0 |       0 |       0 |                   
-  answer.ts        |       0 |        0 |       0 |       0 |                   
-  question.ts      |       0 |        0 |       0 |       0 |                   
--------------------|---------|----------|---------|---------|-------------------
-Test Suites: 2 failed, 11 passed, 13 total
-Tests:       6 failed, 95 passed, 101 total
+PASS src/App.test.tsx
+----------------------|---------|----------|---------|---------|-------------------
+File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------------------|---------|----------|---------|---------|-------------------
+All files             |   97.57 |    88.78 |     100 |   97.46 |                   
+ src                  |   97.48 |     88.6 |     100 |   97.31 |                   
+  App.tsx             |     100 |      100 |     100 |     100 |                   
+  arrays.ts           |     100 |      100 |     100 |     100 |                   
+  functions.ts        |     100 |      100 |     100 |     100 |                   
+  nested.ts           |     100 |    95.65 |     100 |     100 | 211               
+  objects.ts          |   88.57 |    69.23 |     100 |   88.57 | 61-67,82          
+ src/bad-components   |   96.55 |       50 |     100 |   96.55 |                   
+  ChooseTeam.tsx      |     100 |       50 |     100 |     100 | 18                
+  ColoredBox.tsx      |     100 |      100 |     100 |     100 |                   
+  DoubleHalf.tsx      |     100 |      100 |     100 |     100 |                   
+  DoubleHalfState.tsx |       0 |      100 |     100 |       0 | 3                 
+  ShoveBox.tsx        |     100 |      100 |     100 |     100 |                   
+ src/components       |    98.3 |     92.3 |     100 |    98.3 |                   
+  ChangeType.tsx      |     100 |      100 |     100 |     100 |                   
+  Counter.tsx         |     100 |      100 |     100 |     100 |                   
+  CycleHoliday.tsx    |   94.44 |    83.33 |     100 |   94.44 | 68                
+  RevealAnswer.tsx    |     100 |      100 |     100 |     100 |                   
+  StartAttempt.tsx    |     100 |    83.33 |     100 |     100 | 9                 
+  TwoDice.tsx         |     100 |      100 |     100 |     100 |                   
+ src/interfaces       |       0 |        0 |       0 |       0 |                   
+  answer.ts           |       0 |        0 |       0 |       0 |                   
+  question.ts         |       0 |        0 |       0 |       0 |                   
+----------------------|---------|----------|---------|---------|-------------------
+
+Test Suites: 2 failed, 15 passed, 17 total
+Tests:       6 failed, 112 passed, 118 total
 Snapshots:   0 total
-Time:        5.442 s
+Time:        7.109 s
 Ran all test suites.
